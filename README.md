@@ -49,6 +49,21 @@ jupyter notebook
 
 Isso abrirá o Jupyter Notebook no seu navegador padrão.
 
+### Executando via docker
+
+Realize o build da imagem dentro da raiz do projeto
+```bash
+docker build -t fiap-ai-tech-challenge-01 .
+```
+Executando
+```bash
+docker run -p 8080:8080 fiap-ai-tech-challenge-01
+```
+
+O token de acesso ao jupyter server irá aparecer no log, ele e necessário para a utilização no navegador
+
+http://localhost:8080/tree?token...
+
 ### Passo 5: Executar os notebooks
 
 1. **Primeiro execute:** `notebooks/tech-challenger-01-analisys.ipynb`
@@ -58,3 +73,4 @@ Isso abrirá o Jupyter Notebook no seu navegador padrão.
 2. **Depois execute:** `notebooks/tech-challenger-01-model.ipynb`
    - Desenvolvimento e avaliação dos modelos de Machine Learning
    - Comparação de diferentes algoritmos
+
