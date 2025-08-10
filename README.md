@@ -1,6 +1,6 @@
 # FIAP AI Tech Challenge - Fase 01
 
-Projeto de análise e predição de incidência de câncer de pulmão usando Machine Learning. Este projeto utiliza o dataset "[Lung Cancer Risk & Trends Across 25 Countries](https://www.kaggle.com/datasets/ankushpanday1/lung-cancer-risk-and-trends-across-25-countries/data)" para análise exploratória e desenvolvimento de modelos preditivos.
+Projeto de análise e predição de incidência de câncer de pulmão usando Machine Learning. Este projeto utiliza o dataset "[Lung Cancer Risk & Trends Across 25 Countries](https://www.kaggle.com/datasets/ankushpanday1/lung-cancer-risk-and-trends-across-25-countries/data)" para análise exploratória e desenvolvimento de modelos preditivos. O vídeo de apresentação dos notebooks está [disponível no YouTube](https://youtu.be/0srFeYnYoII).
 
 ## Estrutura do Projeto
 
@@ -49,20 +49,23 @@ jupyter notebook
 
 Isso abrirá o Jupyter Notebook no seu navegador padrão.
 
-### Executando via docker
+### (opcional) Executando via docker
 
-Realize o build da imagem dentro da raiz do projeto
+Realize o build da imagem dentro da raiz do projeto:
+
 ```bash
 docker build -t fiap-ai-tech-challenge-01 .
 ```
-Executando
+
+Em seguida inicie o container:
+
 ```bash
 docker run -p 8080:8080 fiap-ai-tech-challenge-01
 ```
 
-O token de acesso ao jupyter server irá aparecer no log, ele e necessário para a utilização no navegador
+O link de acesso ao jupyter server irá aparecer no log: 
 
-http://localhost:8080/tree?token...
+http://127.0.0.1:8080/tree?token=JUPYTER_TOKEN
 
 ### Passo 5: Executar os notebooks
 
@@ -73,4 +76,3 @@ http://localhost:8080/tree?token...
 2. **Depois execute:** `notebooks/tech-challenger-01-model.ipynb`
    - Desenvolvimento e avaliação dos modelos de Machine Learning
    - Comparação de diferentes algoritmos
-
